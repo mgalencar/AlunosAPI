@@ -9,11 +9,19 @@
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
 
-    <Button
+    <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Efetuar chamada API"
-        android:onClick="chamarApi"
-        />
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView">
+
+    </ListView>
 
 </LinearLayout>
